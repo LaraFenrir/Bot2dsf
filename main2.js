@@ -157,7 +157,7 @@ if (message.content.startsWith(`<@529372270754267147> Tu commence doucement à m
         .setColor(`#000000`)
         .setFooter(`Spéciale dédi à Shinai <3`)
         .setURL(response.body.url);
-    message.channel.send({embed: lewdembed});
+    message.channel.send({embed: lewdembed2});
       })
     
   }
