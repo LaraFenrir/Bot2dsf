@@ -147,20 +147,20 @@ if (message.content.startsWith(`<@529372270754267147> Tu commence doucement à m
     
   }
       
-  if(message.content === prefix + "neko"){
-      if (!message.channel.nsfw) return message.channel.send(`Oulah doucement, ce n'est pas dans un channel NSFW !`)
-      superagent2.get('https://nekos.life/api/v2/img/lewd')
-          .end((err, response) => {
-        const lewdembed2 = new Discord.RichEmbed()
-        .setTitle(`Nyyaaa~~ **Gémis puis ronronne proche de ton oreille**`)
-        .setImage(response.body.url)
-        .setColor(`#000000`)
-        .setFooter(`Spéciale dédi à Shinai <3`)
-        .setURL(response.body.url);
-    message.channel.send({embed: lewdembed2});
-      })
-    
-  }
+if(message.content === prefix + "neko"){
+    if (!message.channel.nsfw) return message.channel.send(`Oulah doucement, ce n'est pas dans un channel NSFW !`)
+    superagent2.get('https://nekos.life/api/v2/img/lewd')
+        .end((err, response) => {
+      const lewdembed2 = new Discord.RichEmbed()
+      .setTitle(`Nyyaaa~~ **Gémis puis ronronne proche de ton oreille**`)
+      .setImage(response.body.url)
+      .setColor(`#000000`)
+      .setFooter(`Miaou miaou`)
+      .setURL(response.body.url);
+  message.channel.send(lewdembed2);
+    })
+	
+}
   if(message.content === prefix + "minou"){
       if (!message.channel.nsfw) return message.channel.send(`Oulah doucement, ce n'est pas dans un channel NSFW !`)
       superagent.get('https://nekos.life/api/v2/img/pussy')
