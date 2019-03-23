@@ -116,21 +116,8 @@ if (message.content.startsWith( prefix + "cookie")) {
 if (message.content.startsWith(`<@529372270754267147> Tu commence doucement à me faire chier toi`))
     message.channel.send("Moi aussi je t'aime mon chou <3")
     if (message.content.startsWith(`<@529372270754267147> bon courage`))
-    message.channel.send("Avec un dev comme ℒ𝓪𝓻𝓪 ℱ𝒆𝓷𝓻𝓲𝓻 ouai il m'en faut.. ")
-    if(message.content === prefix + "neko"){
-      if (!message.channel.nsfw) return message.channel.send(`Oulah doucement, ce n'est pas dans un channel NSFW !`)
-      superagent2.get('https://nekos.life/api/v2/img/lewd')
-          .end((err, response) => {
-        const lewdembed2 = new Discord.RichEmbed()
-        .setTitle(`Nyyaaa~~ **Gémis puis ronronne proche de ton oreille**`)
-        .setImage(response.body.url)
-        .setColor(`#000000`)
-        .setFooter(`Spéciale dédi à Shinai <3`)
-        .setURL(response.body.url);
-    message.channel.send({embed: lewdembed});
-      })
-    
-  }
+    message.channel.send("Avec un dev comme ℒ𝓪𝓻𝓪 ℱ𝒆𝓷𝓻𝓲𝓻 ouai il m'en faut.. "
+
   if(message.content === prefix + "fox"){
       if (!message.channel.nsfw) return message.channel.send(`Oulah doucement, ce n'est pas dans un channel NSFW !`)
       superagent.get('https://nekos.life/api/v2/img/fox_girl')
@@ -154,6 +141,21 @@ if (message.content.startsWith(`<@529372270754267147> Tu commence doucement à m
         .setImage(response.body.url)
         .setColor(`#000000`)
         .setFooter(`Mignon tout chat ! #Lara`)
+        .setURL(response.body.url);
+    message.channel.send({embed: lewdembed});
+      })
+    
+  }
+      
+  if(message.content === prefix + "neko"){
+      if (!message.channel.nsfw) return message.channel.send(`Oulah doucement, ce n'est pas dans un channel NSFW !`)
+      superagent2.get('https://nekos.life/api/v2/img/lewd')
+          .end((err, response) => {
+        const lewdembed2 = new Discord.RichEmbed()
+        .setTitle(`Nyyaaa~~ **Gémis puis ronronne proche de ton oreille**`)
+        .setImage(response.body.url)
+        .setColor(`#000000`)
+        .setFooter(`Spéciale dédi à Shinai <3`)
         .setURL(response.body.url);
     message.channel.send({embed: lewdembed});
       })
