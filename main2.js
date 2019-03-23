@@ -20,7 +20,7 @@ const serverStats = {
 db.defaults({ histoires: [], xp: []}).write()
 var bot = new Discord.Client();
 var prefix = ("r!");
-
+var token = process.env.TOKEN
 var cpu = os.loadavg();
 var randnum = 0
 var botenabled = true;
@@ -34,7 +34,7 @@ process.on('unhandledRejection', function(reason, p){
     console.log("");
     
 });
-bot.login("NTU4MzY4MzY2MzQwMDc5NjU3.D3V03w.orpmklwRVGu4uRrKuu3MbM8mp5o")
+bot.login(token)
 
 bot.on("guildMemberAdd", member => {
   if (member.guild.id !== serverStats.guildID) return; 
