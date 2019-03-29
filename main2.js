@@ -29,6 +29,7 @@ var dispatcher;
 bot.on('ready', () => {
   bot.user.setActivity("Être dev par ℒ𝓪𝓻𝓪 ℱ𝒆𝓷𝓻𝓲𝓻 [r!help}", {type: "WATCHING"});
     console.log('Bot Ready !');
+  bot.user.setUsername("𝓢𝓷𝓾𝓻𝒇𝓵 ℒ𝓪𝓻𝓪's bot");
 });
 process.on('unhandledRejection', function(reason, p){
     console.log("");
