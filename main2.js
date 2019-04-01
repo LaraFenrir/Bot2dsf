@@ -114,9 +114,9 @@ if (message.content.startsWith( prefix + "cookie")) {
 }
 
 
-if (message.content.startsWith(`<@529372270754267147> Tu commence doucement à me faire chier toi`))
+if (message.content.startsWith(`<@558368366340079657> Tu commence doucement à me faire chier toi`))
     message.channel.send("Moi aussi je t'aime mon chou <3")
-    if (message.content.startsWith(`<@529372270754267147> bon courage`))
+    if (message.content.startsWith(`<@558368366340079657> bon courage`))
         message.channel.send(`Avec un dev comme <@222445753484705802> ouai il m'en faut.. `)
 
   if(message.content === prefix + "fox"){
